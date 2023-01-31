@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript </title>
+</head>
+<body>
+    <h1>Welcome to JavaScript</h1>
+    <p id="p-name"></p>
+
+    <script>
+//alert("Welcome to the page !");
+var name = prompt("Enter your name");
+var l_name = prompt("Enter last name");
+//confirm("Do you want to Proceed ?");
+var a ='Danapal';
+a="Augustine";
+var b = 90;
+var flag = 100;
+console.log(a);
+console.log(b);
+console.log(flag);
+document.getElementById('p-name').innerHTML="<b>"+name+" "+l_name+"</b>";
+document.write("the last name is "+a);
+document.write("<br>the addition is "+(b+flag));
+const num1 = 1000;
+//num1 = 900;
+document.write("<br>The const is "+num1);
+let num2 = 9000;
+num2 = 80;
+document.write("<br>The let is "+num2);
+document.write("<br>Addition is "+(num1 + num2));
+var array = [1,2,3,4,5];
+console.log(array);
+var person ={name : "Martina", age : 23};
+console.log(person.name);
+var student = person;
+console.log(student.name);
+person.name = "Martina jenifer";
+console.log(student.name);//copy by reference
+var s = 10;
+var j = s;
+console.log("copied value : "+j);
+s = 20;
+console.log("Copied by value : "+j);
+console.log("Changed by value : "+s);// copy by value
+document.write("<br>Addition is :"+(s+j));
+document.write("<br>Subraction is :"+(s-j));
+document.write("<br>Division is :"+(s/j));
+document.write("<br>Modulo is :"+(s%j));
+document.write("<br>Pre-Increment : "+(++s));
+document.write("<br>Post-Increment : "+(s++));
+document.write("<br>Post-Increment : "+(s));
+document.write("<br>Pre-Decrement is : "+(--s));
+document.write("<br>Post-Decrement is : "+(s--));
+document.write("<br>Post-Decrement is : "+(s));
+s+=100;
+document.write("<br>Assignment :"+s);
+var m = 3;
+m**=3;//3^3
+document.write("<br>Cube is :"+m);
+var mj = 30;
+var r = 50;
+if (mj>r)
+document.write("<br>mj is greater");
+else
+document.write("<br>r is greater");
+
+if (mj>r)
+{
+    document.write("<br>mj is greater than r");
+    console.log("mj is greater than r");
+}
+else
+{
+    document.write("<br>r is greater than mj");
+    console.log("r is greater than mj");
+}
+let x = 24, y = 28, z = 20;
+if (x>y && x>z)
+console.log("x is greatest of all");
+else
+if(y>x && y>z)
+console.log("y is greatest of all");
+else
+console.log("z is greatest of all");
+    </script>
+</body>
+</html>
